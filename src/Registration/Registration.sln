@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.Web", "Registration.Web\Registration.Web.csproj", "{7A007EC4-4621-4EDA-8674-1322DC7A0703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.Web", "Registration.Web\Registration.Web.csproj", "{7A007EC4-4621-4EDA-8674-1322DC7A0703}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.Domain", "Registration.Domain\Registration.Domain.csproj", "{3DEC5A31-52DA-4DA2-B7F9-7DD8E95DC423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.Domain", "Registration.Domain\Registration.Domain.csproj", "{3DEC5A31-52DA-4DA2-B7F9-7DD8E95DC423}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.DataAccess", "Registration.DataAccess\Registration.DataAccess.csproj", "{9A64B271-3C8B-4F52-A15A-9452AAAF7A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.DataAccess", "Registration.DataAccess\Registration.DataAccess.csproj", "{9A64B271-3C8B-4F52-A15A-9452AAAF7A95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.Core", "Registration.Core\Registration.Core.csproj", "{D85458F7-FD1D-4AB9-8DB2-66BCF88C2E59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registration.Core", "Registration.Core\Registration.Core.csproj", "{D85458F7-FD1D-4AB9-8DB2-66BCF88C2E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registration.MediatR", "Registration.MediatR\Registration.MediatR.csproj", "{890EF3F2-3D6C-40F3-89BA-D084BE0E3165}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D85458F7-FD1D-4AB9-8DB2-66BCF88C2E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85458F7-FD1D-4AB9-8DB2-66BCF88C2E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85458F7-FD1D-4AB9-8DB2-66BCF88C2E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{890EF3F2-3D6C-40F3-89BA-D084BE0E3165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890EF3F2-3D6C-40F3-89BA-D084BE0E3165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890EF3F2-3D6C-40F3-89BA-D084BE0E3165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890EF3F2-3D6C-40F3-89BA-D084BE0E3165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
