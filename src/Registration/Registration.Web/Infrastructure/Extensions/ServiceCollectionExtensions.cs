@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Registration.DataAccess;
 using Registration.Domain.Identity;
+using Registration.MediatR.Infrastructure;
 
 namespace Registration.Web.Infrastructure.Extensions
 {
@@ -14,7 +15,7 @@ namespace Registration.Web.Infrastructure.Extensions
     {
         public static IServiceCollection AddRegistrationApplicationServices(this IServiceCollection services)
         {
-            return services.AddIdentity();
+            return services.AddIdentity().AddMediator();
         }
 
         private static IServiceCollection AddIdentity(this IServiceCollection services)
@@ -35,6 +36,11 @@ namespace Registration.Web.Infrastructure.Extensions
                 options.AccessDeniedPath = options.LoginPath;
             });
             return services;
+        }
+
+        private static IServiceCollection AddMediator(this IServiceCollection services)
+        {
+            return services.AddMediatorModule().RegisterMediatorModule(typeof(ServiceCollectionExtensions).Assembly);
         }
     }
 }

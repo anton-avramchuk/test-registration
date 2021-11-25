@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Registration.DataAccess\Registration.DataAccess.csproj" />
+    <ProjectReference Include="..\Registration.MediatR\Registration.MediatR.csproj" />
   </ItemGroup>
 
 </Project>

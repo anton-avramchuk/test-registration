@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Registration.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Registration.Web.Infrastructure.Extensions;
 
 namespace Registration.Web
 {
@@ -29,6 +30,9 @@ namespace Registration.Web
             services.AddMvc();
             services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+
+            services.AddRegistrationApplicationServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
