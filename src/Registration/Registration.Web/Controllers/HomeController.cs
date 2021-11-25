@@ -20,7 +20,8 @@ namespace Registration.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            
+            return RedirectToAction("Registration","Identity");
         }
 
         public IActionResult Privacy()
