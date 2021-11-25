@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Registration success";
+    Layout = "_Layout";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<p class="text-center text-success">
+    Registration success
+</p>
+
+@section Scripts
+{
+    <script>
+        window.setTimeout(function () {
+                window.location = '@Url.Action("Index","Home")';
+            },
+            5000);
+    </script>
+}
